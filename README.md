@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### `npm install`
 
-Installs npm modules in node_modules folder.\
+Installs npm modules in node_modules folder.
 
 ### `npm start`
 
