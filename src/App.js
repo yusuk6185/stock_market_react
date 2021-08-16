@@ -1,78 +1,54 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState } from 'react';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 
-import path from "path";
-import dotenv from "dotenv";
+import Home from './components/Home';
+import Stocks from './components/Stocks';
+import StockDetail from './components/StockDetail';
 
-import Navbar from './components/Navibar/NaviBar.js';
-
-dotenv.config({path: path.join(__dirname,".env")})
-
-const companies = [
-  {
-    "symbol": "AAL",
-    "name": " Advance Auto Parts",
-    "industry": "Industrials"
-  },
-  {
-    "symbol": "A",
-    "name": "Agilent Technologies",
-    "industry": "Biotechnology"
-  },
-  {
-    "symbol": "ABR",
-    "name": "Arbor Realty",
-    "industry": "Real Estate Investment"
-  },
-  {
-    "symbol": "ACC",
-    "name": "American Campus Communities",
-    "industry": "Real Estate Investment"
-  },
-  {
-    "symbol": "AESC",
-    "name": "The AES Corporation",
-    "industry": "Electric Utilities"
-  },
-];
-
+import './App.css';
 
 function App() {
-  return (
-    <>
-      <Navbar />
-      <div className="d-flex flex-column align-items-center mb-3">
-        <div className="text-center">
-          <h1>Stocks Prices</h1>
-          <p>
-            Welcome to the Stock Market Portal. You may click on stocks to view all the available companies
-            or Quote to get the latest price information by stock symbol, or choose Price History or search to
-            sample from the most recent one hundred days of information for a particular stock.
-      </p>
-        </div>
-        <div className="stocks">
-          <h3>
-            Stock List
-        </h3>
-          {
-            companies.map(company => (
-              <div>
-                <p>
-                  {company.symbol}
-                </p>
-                <p>
-                  {company.name}
-                </p>
-                <p>
-                  {company.industry}
-                </p>
-              </div>
-            ))
-          }
-        </div>
-      </div>
-    </>
-  );
+    const [stockSymbol, setStockSymbol] = useState("");
+
+    return (
+        <Router>
+            <div>
+                <nav>
+                    <ul>
+                        <div className="brand">
+                            <h2>
+                                Stock Prices
+                            </h2>
+                        </div>
+                        <li>
+                            <Link className="route" to="/">Home</Link>
+                        </li>
+                        <li>
+                            <Link className="route" to="/stocks">Stocks</Link>
+                        </li>
+                    </ul>
+                </nav>
+
+                <Switch>
+                    <Route exact path="/">
+                        <Home />
+                    </Route>
+                    <Route exact path="/stocks">
+                        <Stocks setStockSymbol={setStockSymbol} />
+                    </Route>
+                    <Route path="/history">
+                        <StockDetail stockSymbol={stockSymbol} />
+                    </Route>
+                </Switch>
+
+            </div>
+        </Router>
+    );
 }
 
 export default App;
