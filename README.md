@@ -16,11 +16,13 @@ Since the skeleton of the mobile application is provided, the navigation followe
 ![image](https://user-images.githubusercontent.com/35501963/144550961-7a0709d0-2a7d-420c-a33a-2f468e1b59b3.png)
 This layout design is implemented because the mobile application functions only two simple things to be shown straight forward. The search page is required only to display the list of all stocks and search specific stocks while stocks page can enable user to save stocks to the watch list and show detail information and the chart of the stock.
 The layouts for the search page and stocks page are exactly same as described in the project specification. They look similar to the Stocks application in Apple Appstore. The background color is black, and the font color is white to give contrast. The following figures displays the layout designs for both pages.
+
 ![image](https://user-images.githubusercontent.com/35501963/144550978-0da4cc8c-91a3-471d-81eb-b8d8a3791b7f.png)
 ![image](https://user-images.githubusercontent.com/35501963/144550981-e51588d3-5c2e-49b9-92be-3f486a5d7c85.png)
 
 # Architecture 
 The architecture of this mobile application project followed common react-native application architecture. There are not many things to identify the difference in the architecture of it. The picture below displays the application-level architecture.
+
 ![image](https://user-images.githubusercontent.com/35501963/144551041-bc4c3f8a-3d3d-45a1-a534-2d68c793d82e.png)
 
 # Difficulties 
