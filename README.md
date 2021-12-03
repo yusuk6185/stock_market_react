@@ -13,7 +13,7 @@ npm start
 3. You should be able to access the website on `localhost:3000`
 
 ## Purpose & description 
-The purpose of this report is to provide information about the mobile application developed using React-native and JavaScript. The mobile application shows the list of the stocks in Nasdaq, but only three hundred stocks which include an alphabet ‘A’ for the performance in queries. 
+The purpose of this report is to provide information about the **mobile application** developed using **React-native** and **JavaScript**. The mobile application shows the list of the stocks in NASDAQ, but only three hundred stocks which include an alphabet ‘A’ for the performance in queries. 
 The application allows user to navigate between search page and stocks page. In the search page, the list of the stocks is displayed in ascending order of alphabet. The search bar can be utilized to search specific stock by the name or symbol and the stocks can be stored in the watch list when clicked. In the stocks page, the user can check the stocks on watch list and clicking a stock will enable toggle to show the detail information and a chart which displays the daily price of the stock.
 
 ![image](https://user-images.githubusercontent.com/35501963/144550882-b29132c9-a140-460c-b83d-2f1abc72489e.png)
@@ -21,8 +21,8 @@ The application allows user to navigate between search page and stocks page. In 
 
 # Technical Description
 ## API Used
-As the mobile application is fetching the list of stocks from the stocks API, an appropriate API should be selected. The API selected for this project was ‘Financial Modeling Prep’ which is the same API used for the web application project. FMP is adapted because it provides a number of end points according to the purpose of its usage. For this application, ticker search end point is used for the search page because it was required to search with the symbol and name at the same time. Also, company profile and quote APIs are implemented to fetch the detail information.
-Another API used in this application is ‘react-native-chart-kit’. This API is used to draw the chart in the stock detail toggle when specific stock is clicked in the stocks page. A line chart was implemented to display the daily open prices of the stock.
+As the mobile application is fetching the list of stocks from the stocks API, an appropriate API should be selected. The API selected for this project was **‘Financial Modeling Prep’** which is the same API used for the web application project. FMP is adapted because it provides a number of end points according to the purpose of its usage. For this application, ticker search end point is used for the search page because it was required to search with the symbol and name at the same time. Also, company profile and quote APIs are implemented to fetch the detail information.
+Another API used in this application is **‘react-native-chart-kit’**. This API is used to draw the chart in the stock detail toggle when specific stock is clicked in the stocks page. A line chart was implemented to display the daily open prices of the stock.
 
 # Navigation and Layout 
 Since the skeleton of the mobile application is provided, the navigation followed to the existing bottom tab navigation. The navigation only includes two pages, search page and stocks page. <br/>
