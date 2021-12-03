@@ -15,6 +15,7 @@ Another API used in this application is ‘react-native-chart-kit’. This API i
 Since the skeleton of the mobile application is provided, the navigation followed to the existing bottom tab navigation. The navigation only includes two pages, search page and stocks page. <br/>
 
 ![image](https://user-images.githubusercontent.com/35501963/144550961-7a0709d0-2a7d-420c-a33a-2f468e1b59b3.png)
+
 This layout design is implemented because the mobile application functions only two simple things to be shown straight forward. The search page is required only to display the list of all stocks and search specific stocks while stocks page can enable user to save stocks to the watch list and show detail information and the chart of the stock.
 The layouts for the search page and stocks page are exactly same as described in the project specification. They look similar to the Stocks application in Apple Appstore. The background color is black, and the font color is white to give contrast. The following figures displays the layout designs for both pages. <br/>
 
