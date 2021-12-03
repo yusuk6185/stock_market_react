@@ -16,8 +16,9 @@ npm start
 3. You should be able to access the website on `localhost:3000`
 
 ### Overview 
-![image](https://user-images.githubusercontent.com/35501963/144552841-15c5924b-cfcb-488c-a7d0-d9f5a797648f.png)
 Please check the user guide below to watch full screenshots of the actual application.
+
+![image](https://user-images.githubusercontent.com/35501963/144552841-15c5924b-cfcb-488c-a7d0-d9f5a797648f.png)
 
 ## Purpose & description 
 The purpose of this project is to demonstrate the use of React and JavaScript by developing a client-side web application that allows the user to work with each of the endpoints. Various queries and their responses are formed in order to provide data input and response with components to the users.
