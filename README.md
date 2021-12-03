@@ -1,5 +1,17 @@
 # Introduction
-### npm start 
+## Local Environment
+
+1. Clone the project
+2. Run the following commands
+
+```
+cd stock_market_react
+npm install
+npm start
+```
+
+3. You should be able to access the website on `localhost:3000`
+
 ## Purpose & description 
 The purpose of this report is to provide information about the mobile application developed using React-native and JavaScript. The mobile application shows the list of the stocks in Nasdaq, but only three hundred stocks which include an alphabet ‘A’ for the performance in queries. 
 The application allows user to navigate between search page and stocks page. In the search page, the list of the stocks is displayed in ascending order of alphabet. The search bar can be utilized to search specific stock by the name or symbol and the stocks can be stored in the watch list when clicked. In the stocks page, the user can check the stocks on watch list and clicking a stock will enable toggle to show the detail information and a chart which displays the daily price of the stock.
